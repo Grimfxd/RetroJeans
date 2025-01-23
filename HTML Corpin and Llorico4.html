@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link rel="icon" type="image/x-icon" href="Logo.jpg">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloadflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--css file -->
+    <link rel="stylesheet" type="text/css" href="HTML Corpin and Llorico.css">
+    <script src="https.//code.journey.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <!--header start -->
+    <header class ="header">
+        <!-- logo -->
+        <a href="1-index.html" class="logo">
+        <img src="Logo.jpg">
+        </a>
+
+        <!-- nav bar start -->
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+               <label for="check" class="check-bnt">
+                    <i class="fas fa-bars"></i>
+                </label>
+            <ul>
+              <li><a href="HTML Corpin and Llorico5.html">Home</a></li>
+              <li><a href="HTML Corpin and Llorico4.html">Menu</a></li>
+              <li><a href="CSS Coprin and Llorico.html">About Us</a></li>
+            </ul>
+        <!-- <div id="2-menu"-btn" class="fas fa-bars"></div> -->
+        </nav>
+        <!-- nav bar end -->
+
+
+        <!-- hyperlink widh icons (search, cart, profile, menu button) -->
+        <div class="Icons">
+        <div class="cart-container" onmouseover="showCartFort()" onmouseout="hideCartForm()">
+            <a href="4-cart.html">
+            <div class = "fas fa-shopping-cart" id="cartbutton"></div>
+            </a>
+               <div class="cart-form" id="cartform">
+                    <form>
+                        <div id="cartItems"></div>
+                        <div id="total-price">Total Price: ₱<span id="totalprice">0.00</span></div>
+                    </form>
+                </div>
+        </div>
+        <!--hyperlink with icons (search, cart, profile, menu button) -->
+    </header>
+    <!-- header end -->
+
+    <!-- Menu Section -->
+<section class="menu" id="menu">
+    <h1 class="heading">OUR<span>JEANS</span></h1>
+    <p class="heading-description">We have the best jeans in the world!</p>
+
+
+    <div class="category-text"><h3>Baggy Fit Jeans</h3></div>
+
+<div class="menu">
+    <div class="container menu-section">
+        <!-- product 1 -->
+        <div class="menu-box" >
+            <div class="menu-img">
+                 <img src="Black_baggy_jeans.png" alt="Black Baggy Jeans">
+        </div>
+        <div class="menu-content">
+            <h3>Black Baggy jeans</h3>
+            <p> A Black Baggy Jeans with a beautiful color black with ligth brown have the best cotton fiber.</p>
+            <div onclick="addToCart('Black_Jeans (Small)', '₱999.00', 'Black_baggy_jeans.png', 'item1-s'); return false;">
+                <button id="item-s">Small <span>₱999.00</span></button> <!-- SMALL -->
+            </div>
+            <div onclick="addToCart('Black_Jeans(Medium)', '₱1,500.00', 'Black_baggy_jeans.png', 'item1-m'); return false;">
+                <button id="item1-m">Medium <span>₱1,500.00</span></button><!-- MEDIUM -->
+            </div>
+            <div onclick="addToCart('Black_Jeans(Large)', '₱1,999.00', 'Black_baggy_jeans.png', 'item-1'); return false;">
+            <button id="item-1".>Large <span>₱1,999.00</span></button> <!-- LARGE -->
+        </div>
+    </div>
+</div>
+
+<!-- product 2 -->
+<div class="menu-box">
+    <div class="menu-img">
+        <img src="68f2490d-6615-4704-81bb-6e145836d989.png" width="500" height="500" alt="Mega Jeans">
+    </div>
+    <div class="menu-content">
+        <h3>Mega Jeans</h3>
+        <p>A blast of best fit with you favorite fitted shirt and it partnerd by girl.</p>
+        <div onclick="addToCart('Mega Jeans (Small)', '₱999.00', '68f2490d-6615-4704-81bb-6e145836d989.png', 'item2-s'); return false;">
+            <button id="item2-s">Small <spa>₱999.00</spa></button>
+        </div>
+
+        <div onclick="addToCart('Mega Jeans (Medium)', '₱1,500.00', '68f2490d-6615-4704-81bb-6e145836d989.png', 'item2-m'); return false;">
+            <button id="item2-m">Medium <span>₱1,500.00</span></button>
+        </div>
+
+        <div onclick="addToCart('Mega Jeans (Large)', '₱1,999.00', '68f2490d-6615-4704-81bb-6e145836d989.png', 'item2-1'); return false;">
+            <button id="item2-1">Large <span>₱1,999.00</span></button>
+        </div>
+    </div>
+</div>
+
+<!-- product 3 -->
+<div class="menu-box">
+    <div class="menu-img">
+        <img src="Baggy_men_s_aged_jeans_-_Blue.png" width="500" height="500" alt="Blue Jeans">
+    </div>
+    <div class="menu-content">
+        <h3>Blue Jeans</h3>
+        <p>A delightful color with oour blue jeans.</p>
+        <div onclick="addToCart('Blue Jeans (Small)', '₱999.00', 'Baggy_men_s_aged_jeans_-_Blue.png', 'item3-s'); return false;">
+            <button id="item3-s">Small <span>₱999.00</span></button>
+        </div>
+
+        <div onclick="addToCart('Blue Jeans(Medium)', '₱1,500.00', 'Baggy_men_s_aged_jeans_-_Blue.png', 'item4-m'); return false;">
+            <button id="item4-m">Medium <span>₱1,500.00</span></button>
+        </div>
+        
+        <div onclick="addToCart('Blue Jeans(Large)', '₱1,999.00', 'Baggy_men_s_aged_jeans_-_Blue.png', 'item4-1') return false;">
+            <button id="item4-1">Large <span>₱1,999.00</span></button>
+        </div>
+    </div>
+</div>
+
+<!-- product 4 -->
+<div class="menu-box">
+    <div class="menu-img">
+        <img src="American_New_Trend_Retro_Washed_Black_Hip-Hop_Baggy_Jeans_Men_s_Y2K_New_Harajuku_Punk_Gothic_Couple.png" width="500" height="500" alt="Retro Washed Black Baggy Jeans">
+    </div>
+    <div class="menu-content">
+        <h3>Vamtac Harajuku Hip Hop Denim</h3>
+        <p>A retro jeans washed black.</p>
+        <div onclick="addToCart('Retro Washed Black Baggy Jeans(Small)', '₱999.00', 'American_New_Trend_Retro_Washed_Black_Hip-Hop_Baggy_Jeans_Men_s_Y2K_New_Harajuku_Punk_Gothic_Couple.png', 'item4-s'); return false;">
+            <button id="item4-s">Small <span>₱999.00</span></button>
+        </div>
+
+        <div onclick="addToCart('Retro Washed Black Baggy Jeans(Medium)', '₱1,500.00', 'American_New_Trend_Retro_Washed_Black_Hip-Hop_Baggy_Jeans_Men_s_Y2K_New_Harajuku_Punk_Gothic_Couple.png', 'item4-m'); return false;">
+            <button id="item4-s">Medium <span>₱1,500.00</span></button>
+        </div>
+
+        <div onclick="addToCart('Retro Washed Black Baggy Jeans(Large)', 'Php120.00', 'American_New_Trend_Retro_Washed_Black_Hip-Hop_Baggy_Jeans_Men_s_Y2K_New_Harajuku_Punk_Gothic_Couple.png', 'item4-1'); return false;">
+            <button id="item4-1">Large <span>₱1,999.00</span></button>
+        </div>
+    </div>
+</div>
+
+<!-- add more menu items here with the same structure -->
+</div>
+
+    <div class="category-text"><h3>Slim Fit Jeans</h3></div>
+
+<div class="container menu-section">
+    <!-- product 1 -->
+    <div class="menu-box" id="iced-americano">
+        <div class="menu-img">
+            <img src="M1951_Bianchi_Stacked_Jeans_-_Black_-_42___BLACK.png" width="400" height="400"  alt="Bianchi Black Jeans">
+        </div>
+    <div class="menu-content">
+        <h3>Bianchi Black Jeans</h3>
+        <p>A cool jenas for teens.</p>
+        <div onclick="addToCart('Bianchi Black Jeans(Small)', '₱999.00', 'M1951_Bianchi_Stacked_Jeans_-_Black_-_42___BLACK.png', 'item5-s'); return false;">
+            <button id="item5-s">Small <span>₱999.00</span></button>
+        </div>
+
+        <div onclick="addToCart('Bianchi Black Jeans(Medium)', '₱1,500.00', 'M1951_Bianchi_Stacked_Jeans_-_Black_-_42___BLACK.png', 'item5-m'); return false;">
+            <button id="item5-m">Medium <span>₱1,500.00</span></button>
+        </div>
+
+        <div onclick="addToCart('Bianchi Black Jeans(Large)', '₱1,999.00', 'M1951_Bianchi_Stacked_Jeans_-_Black_-_42___BLACK.png', 'item5-1'); return false;">
+            <button id="item5-1">Large <span>₱1,999.00</span></button>
+        </div>
+    </div>
+</div>
+
+<!-- product 2 -->
+<div class="menu-box">
+    <div class="menu-img">
+        <img src="Jeans_Masculina_Preta_de_Corte_Reto_e_Ajustado_com_Remendos_Desgastados.png" width="400" height="400" alt="Jeans Masculina">
+    </div>
+    <div class="menu-content">
+        <h3>Jeans Masculina</h3>
+        <p>With our best slim jeans.</p>
+        <div onclick="addToCart('Jeans Masculina(Small)', '₱999.00', 'Jeans_Masculina_Preta_de_Corte_Reto_e_Ajustado_com_Remendos_Desgastados.png', 'item6-s'); return false;">
+            <button id="item6-s">Small <span>₱999.00</span></button>
+        </div>
+
+        <div onclick="addToCart('Jeans Masculina(Medium)', '₱1,500.00', 'Jeans_Masculina_Preta_de_Corte_Reto_e_Ajustado_com_Remendos_Desgastados.png', 'item6-m'); return false;">
+            <button id="item6-m">Medium <span>₱1,500.00</span></button>
+        </div>
+
+        <div onclick="addToCart('Jeans Masculina(Large)', '₱1,999.00', 'Jeans_Masculina_Preta_de_Corte_Reto_e_Ajustado_com_Remendos_Desgastados.png', 'item6-1'); return false;">
+          <button id="item6-1">Large <span>₱1,999.00</span></button>
+          </div>
+    </div>
+</div>
+
+<!-- product 3 -->
+<div class="menu-box">
+    <div class="menu-img">
+         <img src="950307b7-9aa8-41ba-b16b-efd4d8e1508f.png" width="400" height="400" alt="Black Ripped Blue">
+    </div>
+    <div class="menu-content">
+        <h3>Black Ripped Blue<h/3>
+        <p>Enjoy the cool sophistication of a cappuccino over ice, maintaining its frothy allure.</p>
+        <div onclick="addToCart('Black Ripped Blue(Small)', '₱999.00', '950307b7-9aa8-41ba-b16b-efd4d8e1508f.png', 'item7-s') return false;">
+          <button id="item7-s">Small <span>₱999.00</span></button>
+          </div>
+
+          <div onclick="addToCart('Black Ripped Blue(Medium)', '₱1,500.00', '950307b7-9aa8-41ba-b16b-efd4d8e1508f.png', 'item7-m'); return false;">
+          <button id="item7-m">Medium <span>₱1,500.00</span></button>
+          </div>
+
+          <div onclick="addToCart('Black Ripped Blue(Large)', '₱1,999.00', '950307b7-9aa8-41ba-b16b-efd4d8e1508f.png', 'item7-l'); return false;">
+           <button id="item7-1">Large <span>₱1,999.00</span></button>
+          </div>
+    </div>
+</div>
+
+             <!-- product 4 -->
+        <div class="menu-box">
+            <div class="menu-img">
+               <img src="Ripped_Hole_Pentagram_Star_Patch_Jean_-_as_pic___29.png" width="400" height="400" alt="Ripped Hole Pentagram Jeans">
+            </div>
+            <div class="menu-content">
+                <h3>Ripped Hole Pentagram Jeans</h3>
+                <p>With our Best jeans.</p>
+                <div onclick="addToCart('Ripped Hole Pentagram Jeans(Small)', '₱999.00', 'Ripped_Hole_Pentagram_Star_Patch_Jean_-_as_pic___29.png', 'item8-s'); return false;">
+                 <button id="item8-s">Small <span>₱999.00</span></button>
+                </div>
+
+                <div onclick="addToCart('Ripped Hole Pentagram Jeans(Medium)', '₱1,500.00', 'Ripped_Hole_Pentagram_Star_Patch_Jean_-_as_pic___29.png', 'item8-m'); return false;">
+                 <button id="item8-m">Medium <span>₱1,500.00</span></button>
+                </div>
+
+                <div onclick="addToCart('Ripped Hole Pentagram Jeans(Large)', '₱1,999.00', 'Ripped_Hole_Pentagram_Star_Patch_Jean_-_as_pic___29.png', 'item8-l'); return false;">
+                 <button id="item8-l">Large <span>₱1,999.00</span></button>
+                </div>
+            </div>
+        </div>
+                 <!-- Add more menu items here with the same structure -->
+    </div>
+
+        <div class="category-text"><h3>Hoodies</h3></div>
+
+    <div class="container menu-selection">
+        <!-- product 1 -->
+        <div class="menu-box">
+            <div class="menu-img">
+                <img src="Men_Letter_Graphic_Drawstring_Hem_Hooded_Jacket.png" alt="Hem Hoodie Jacket">
+            </div>
+            <div class="menu-content">
+                <h3>Hem Hoodie Jacket</h3>
+                <p>A Hoodies Jacket.</p>
+                <div onclick="addToCart('Hem Hoodie Jacket(Small)', '₱999.00', 'Men_Letter_Graphic_Drawstring_Hem_Hooded_Jacket.png', 'item9-s'); return false;">
+                 <button id="item9-s">Small <span>₱999.00</span></button>
+                </div>
+
+                <div onclick="addToCart('Hem Hoodie Jacket(Medium)', '₱1,500.00', 'Men_Letter_Graphic_Drawstring_Hem_Hooded_Jacket.png', 'item9-m'); return false;">
+                 <button id="item9-m">Medium <span>₱1,500.00</span></button>
+                </div>
+
+                <div onclick="addToCart('Hem Hoodie Jacket(Large)', '₱1,999.00', 'Men_Letter_Graphic_Drawstring_Hem_Hooded_Jacket.png', 'item9-l'); return false;">
+                 <button id="item9-l">Large <span>₱1,999.00</span></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- product 2 -->
+        <div class="menu-box">
+            <div class="menu-img">
+                <img src="Men_s_Waterproof_Loose_Mountaineering_Hooded_Jacket_Outdoor_Climbing_Pure_Color_Windbreaker.png" alt="Men's Jacket and windbreaker">
+            </div>
+            <div class="menu-content">
+            <h3>Men's Jacket and windbreaker</h3>
+            <p>A Outdoor jacket.</p>
+            <div onclick="addToCart('Mens Jacket(Small)', '₱999.00', 'Men_s_Waterproof_Loose_Mountaineering_Hooded_Jacket_Outdoor_Climbing_Pure_Color_Windbreaker.png', 'item10-s'); return false;">
+                 <button id="item10-s">Small <span>₱999.00</span></button>
+                </div>
+
+            <div onclick="addToCart('Mens  Jacket(Medium)', '₱1,500.00', 'Men_s_Waterproof_Loose_Mountaineering_Hooded_Jacket_Outdoor_Climbing_Pure_Color_Windbreaker.png', 'item10-m'); return false;">
+                 <button id="item10-m">Medium <span>₱1,500.00</span></button>
+                </div>
+
+            <div onclick="addToCart('Mens Jacket(Large)', '₱1,999.00', 'Men_s_Waterproof_Loose_Mountaineering_Hooded_Jacket_Outdoor_Climbing_Pure_Color_Windbreaker.png', 'item10-l'); return false;">
+                 <button id="item10-l">Large <span>₱1,999.00</span></button>
+                </div>
+            </div>
+        </div>
+
+<!-- product 3 -->
+        <div class="menu-box">
+            <div class="menu-img">
+                <img src="Men_Plus_Letter_Patched_Detail_Drawstring_Hooded_Jacket.png" alt="Patched Deatiled Hoodie Jacket">
+            </div>
+            <div class="menu-content">
+            <h3>Patched Deatiled Hoodie Jacket</h3>
+            <p>A solid patched Deatiled Hoodie.</p>
+            <div onclick="addToCart('Patched Deatiled Hoodie Jacket(Small)', '₱999.00', 'Men_Plus_Letter_Patched_Detail_Drawstring_Hooded_Jacket.png', 'item11-s'); return false;">
+                 <button id="item11-s">Small <span>₱999.00</span></button>
+                </div>
+
+            <div onclick="addToCart('Patched Deatiled Hoodie Jacket(Medium)', '₱1,500.00', 'Men_Plus_Letter_Patched_Detail_Drawstring_Hooded_Jacket.png', 'item11-m'); return false;">
+                 <button id="item11-m">Medium <span>₱1,500.00</span></button>
+                </div>
+
+            <div onclick="addToCart('Patched Deatiled Hoodie Jacket(Large)', '₱1,999.00', 'Men_Plus_Letter_Patched_Detail_Drawstring_Hooded_Jacket.png', 'item11-l'); return false;">
+                 <button id="item11-l">Large <span>₱1,999.00</span></button>
+                </div>
+            </div>
+        </div>
+
+<!-- product 4 -->                          
+        <div class="menu-box" id="hot-mocha">
+            <div class="menu-img">
+                <img src="Men_Two_Tone_Flap_Pocket_Hooded_Jacket.png" alt="Two Tone Pocket Hoodie Jacket">
+            </div>
+            <div class="menu-content">
+            <h3>Two Tone Pocket Hoodie Jacket</h3>
+            <p>A calming sip with a perfect harmony of espresso and chocolate, creating a delicious and warming delight.</p>
+            <div onclick="addToCart('Two Tone Pocket Hoodie Jacket(Small)', '₱999.00', 'Men_Two_Tone_Flap_Pocket_Hooded_Jacket.png', 'item12-s'); return false;">
+                 <button id="item12-s">Small <span>₱999.00</span></button>
+                </div>
+
+            <div onclick="addToCart('Two Tone Pocket Hoodie Jacket(Medium)', '₱1,500.00', 'Men_Two_Tone_Flap_Pocket_Hooded_Jacket.png', 'item12-m'); return false;">
+                 <button id="item12-m">Medium <span>₱1,500.00</span></button>
+                </div>
+
+            <div onclick="addToCart('Two Tone Pocket Hoodie Jacket(Large)', '₱1,999.00', 'Men_Two_Tone_Flap_Pocket_Hooded_Jacket.png', 'item12-l'); return false;">
+                 <button id="item12-l">Large <span>₱1,999.00</span></button>
+                </div>
+            </div>
+        </div>
+
+</section>
+    <!-- Menu Section End -->
+
+        <!-- footer start -->
+    <section class="footer">
+
+        <div class="container">
+            <div class="footer-box-1">
+                 <h3> Location </h3>
+                 <div class="footer-loc">
+                 <a href="https://www.google.com/maps/place/TUP+-+College=of=Industrial+Technology/@14.5873937,120.9848474,17z/data=!3m1!4b1!4m6!3m5!1s0x3397cb93cd451575:0x6247d293ffefede0!8m2!3d14.5873937!4d120.9848474!16s%2fg%2f11hfq216nk?h1=en&entry=ttu" target=_blank>College of Industrial Technology, 660. TUP, Ermita, Manilla, 1000</a>
+               </div>
+            </div>
+
+            <div class="footer-box">
+                 <h3>Newsletter</h3>
+                 <p>Stay update with our latest</p>
+                 <form>
+                     <input type="email" name="email" placeholder="RetroJEans@gmail.com">
+                     <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+                 </form>
+            </div>
+
+            <div class="footer-box">
+                 <h3>Contact us</h3>
+                 <p>Connect with Us On:</p>
+                 <div class="icons">
+                     <a href="#"><i class="fa-brands fa-facebook-f"><i/></a>
+                     <a href="#"><i class="fa-brands fa-instagram"><i/></a>
+                     <a href="#"><i class="fa-brands fa-twitter"><i/></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+    <script src="2-menu.js"></script>
+</body>
+</html>
